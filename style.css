@@ -196,7 +196,7 @@ i:focus {
 }
 
 .streamIcons i {
-    font-size: 30;
+    font-size: 15;
     filter: brightness(100);
     padding: 30%;
 }
