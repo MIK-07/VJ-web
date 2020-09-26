@@ -9,6 +9,10 @@ img {
     outline: none;
 }
 
+i {
+    outline: none;   
+}
+
 .subHead {
     text-align: center;
     width: 100%;
