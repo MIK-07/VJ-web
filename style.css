@@ -5,11 +5,11 @@ body {
     outline: none;
 }
 
-img {
+img:focus {
     outline: none;
 }
 
-i {
+i:focus {
     outline: none;   
 }
 
