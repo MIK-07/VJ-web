@@ -5,6 +5,10 @@ body {
     outline: none;
 }
 
+img {
+    outline: none;
+}
+
 .subHead {
     text-align: center;
     width: 100%;
