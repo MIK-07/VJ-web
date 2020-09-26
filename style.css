@@ -112,6 +112,7 @@ i:focus {
     margin: 3%;
     opacity: 0.4;
     transition: 0.5s;
+    font-size: 20;
 }
 
 #social-in-menu i:hover {
@@ -195,7 +196,7 @@ i:focus {
 }
 
 .streamIcons i {
-    font-size: 50;
+    font-size: 30;
     filter: brightness(100);
     padding: 30%;
 }
