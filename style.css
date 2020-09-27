@@ -100,6 +100,8 @@ i:focus {
     list-style: none;
     width: 15%;
     float: right;
+    height: 100%;
+    margin: 1.7%;
 }
 
 #social-in-menu a {
@@ -112,7 +114,6 @@ i:focus {
     margin: 3%;
     opacity: 0.4;
     transition: 0.5s;
-    font-size: 20;
 }
 
 #social-in-menu i:hover {
