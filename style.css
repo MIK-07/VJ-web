@@ -177,10 +177,12 @@ img:focus, i:focus, a:focus, input, textarea, button {
 
 .logo_bg img {
     width: 100%;
+    animation: fadeIn 0.5s 0s;
 }
 
 .translu {
     opacity: 0.2;
+    animation: none;
 }
 
 .streamIcons {
@@ -224,4 +226,13 @@ a {
 
 #newd29:hover {
     transform: scale(1.7);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
