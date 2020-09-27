@@ -5,7 +5,7 @@ body {
     outline: none;
 }
 
-img:focus, i:focus, a:focus, input, textarea {
+img:focus, i:focus, a:focus, input, textarea, button {
     outline: none !important;
 }
 
