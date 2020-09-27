@@ -5,15 +5,7 @@ body {
     outline: none;
 }
 
-img:focus {
-    outline: none !important;
-}
-
-i:focus {
-    outline: none !important;   
-}
-
-a:focus {
+img:focus, i:focus, a:focus {
     outline: none !important;
 }
 
