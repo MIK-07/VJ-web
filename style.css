@@ -58,14 +58,13 @@ img:focus, i:focus, a:focus, input, textarea, button {
 }
 
 .songs span p {
-    font-size: 30;
+    font-size: 25;
     line-height: 50px;
     font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: -1300%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: -50%;
+    transform: translate(-50%, 0%);
 }
 
 .songs img {
