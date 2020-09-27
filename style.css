@@ -111,7 +111,6 @@ img:focus, i:focus, a:focus, input, textarea, button {
     margin: 3%;
     opacity: 0.4;
     transition: 0.5s;
-    font-size: 20;
 }
 
 #social-in-menu i:hover {
