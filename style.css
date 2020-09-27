@@ -6,11 +6,11 @@ body {
 }
 
 img:focus {
-    outline: none;
+    outline: none !important;
 }
 
 i:focus {
-    outline: none;   
+    outline: none !important;   
 }
 
 .subHead {
