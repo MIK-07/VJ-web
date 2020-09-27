@@ -95,10 +95,10 @@ img:focus, i:focus, a:focus, input, textarea, button {
 
 #social-in-menu {
     list-style: none;
-    width: 15%;
+    width: 23%;
     float: right;
     height: 100%;
-    margin: 1.7%;
+    margin: 1%;
 }
 
 #social-in-menu a {
@@ -111,6 +111,7 @@ img:focus, i:focus, a:focus, input, textarea, button {
     margin: 3%;
     opacity: 0.4;
     transition: 0.5s;
+    font-size: 22;
 }
 
 #social-in-menu i:hover {
