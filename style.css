@@ -177,7 +177,7 @@ img:focus, i:focus, a:focus, input, textarea, button {
 
 .logo_bg img {
     width: 100%;
-    animation: fadeIn 0.5s 0s;
+    animation: fadeIn 1s 0s;
 }
 
 .translu {
