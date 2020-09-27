@@ -13,6 +13,10 @@ i:focus {
     outline: none !important;   
 }
 
+a:focus {
+    outline: none !important;
+}
+
 .subHead {
     text-align: center;
     width: 100%;
