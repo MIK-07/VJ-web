@@ -184,6 +184,7 @@ img:focus, i:focus, a:focus, input, textarea, button {
 }
 
 .translu {
+    position: absolute;
     opacity: 0.2;
     animation: none;
 }
@@ -320,8 +321,12 @@ a {
     .contact input, .contact textarea {
         background-color: #ddd;
         border-radius: 10px;
-        margin: 2% 0;
+        margin: 4% 0;
         width: 100%;
+    }
+
+    .translu {
+        display: none;
     }
 }
 
