@@ -268,6 +268,56 @@ a {
     padding: 1%;
 }
 
+.topnavmob {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    #social-in-menu {
+        display: none;
+    }
+    /* Style the navigation menu */
+    .topnavmob {
+        display: block;
+        overflow: hidden;
+        background-color: #000;
+        position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnavmob #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnavmob a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnavmob a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnavmob i {
+        margin: 0;
+    }
+
+    /* Style the active link (or home/logo) */
+    .activeHam {
+        background-color: #000;
+        color: white;
+    }
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
