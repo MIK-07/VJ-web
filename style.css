@@ -337,6 +337,12 @@ a {
     .subHead p {
         font-size: 30;
     }
+
+    .songs span p {
+        font-size: 12;
+        line-height: 1.5;
+        top: -300%;
+    }
 }
 
 @keyframes fadeIn {
