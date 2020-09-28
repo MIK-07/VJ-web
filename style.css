@@ -352,14 +352,10 @@ a {
         line-height: 1.5;
         top: -800%;
     }
-
-    .alb_list_container {
+  
+    #social-in-menu {
         display: none;
     }
-    
-    .alb_list {
-        display: none;
-    }  
 }
 
 @media screen and (max-width: 640px) {
@@ -368,6 +364,14 @@ a {
         line-height: 1.5;
         top: -600%;
     }
+
+    .alb_list_container {
+        display: none;
+    }
+    
+    .alb_list {
+        display: none;
+    }  
 }
 
 @media screen and (max-width: 480px) {
