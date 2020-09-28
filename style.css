@@ -316,6 +316,13 @@ a {
         background-color: #000;
         color: white;
     }
+
+    .contact input, .contact textarea {
+        background-color: #ddd;
+        border-radius: 10px;
+        margin: 2% 0;
+        width: 100%;
+    }
 }
 
 @keyframes fadeIn {
