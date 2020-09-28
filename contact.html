@@ -134,6 +134,23 @@
             </ul>
         
         </nav>
+	    
+        <!--Small screens-->
+        <!-- Top Navigation Menu -->
+        <div class="topnavmob">
+            <a href="index.html" class="activeHam">Home</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="about.html">About</a>
+                <a href="releases.html">Releases</a>
+                <a href="music.html">Music</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         
             <div class="contact">
                 <h2 class = "head">Contact</h2>
@@ -192,6 +209,16 @@
 
             navCollapse();
             window.addEventListener('scroll', navCollapse);
+		
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
         </script>
     </body>
 </html>
