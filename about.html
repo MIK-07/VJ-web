@@ -224,6 +224,11 @@
                     x.style.display = "block";
                 }
             }
+		
+            if (window.innerHeight > window.innerWidth) {
+                document.querySelector(".bg").style.height = "100%";
+                document.querySelector(".bg").style.width = "auto";
+            }
         </script>
     </body>
 </html>
