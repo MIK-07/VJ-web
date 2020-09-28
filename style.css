@@ -339,9 +339,34 @@ a {
     }
 
     .songs span p {
-        font-size: 12;
+        font-size: 20;
         line-height: 1.5;
-        top: -300%;
+        top: -1000%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .songs span p {
+        font-size: 16;
+        line-height: 1.5;
+        top: -800%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .songs span p {
+        font-size: 16;
+        line-height: 1.5;
+        top: -600%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .songs span p {
+        font-size: 13;
+        line-height: 1.5;
+        top: -400%;
     }
 }
 
