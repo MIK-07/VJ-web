@@ -353,7 +353,7 @@ a {
         top: -800%;
     }
   
-    #social-in-menu {
+    .streamIcons {
         display: none;
     }
 }
