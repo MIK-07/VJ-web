@@ -253,24 +253,29 @@ a {
     color: #754de0;
 }
 
-.copyright {
-    bottom: 0;
-    margin: 1% 0 0 0;
-    width: 100%;
-    background-color: #333;
+.topnavmob {
+    display: none;
 }
 
-.abs {
+#page_container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content_wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+
+.copyright {
+    background-color: #333;
     position: absolute;
+    bottom: 0;
+    width: 100%;           /* Footer height */
 }
 
 .copyright p {
     text-align: center;
-    padding: 1%;
-}
-
-.topnavmob {
-    display: none;
+    padding: 1% 0;
 }
 
 @media screen and (max-width: 960px) {
