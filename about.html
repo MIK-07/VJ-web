@@ -148,18 +148,7 @@
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <!-- <i class="fa fa-bars"></i> -->
-		 <div class="menu cross menu--2">
-    			<label>
-     				<input type="checkbox">
-      				<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        				<circle cx="50" cy="50" r="30" />
-        				<path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64" />
-        				<path class="line--2" d="M0 50h99" />
-        				<path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64" />
-      				</svg>
-    			</label>
-  		</div>
+                <i class="fa fa-bars"></i>
             </a>
         </div>	    
 
@@ -240,29 +229,6 @@
                 document.querySelector(".bg").style.height = "100%";
                 document.querySelector(".bg").style.width = "auto";
             }
-		Array.from(document.getElementsByTagName('path')).map(path => {
-  console.log(path.getTotalLength());
-  const debugPath = path.cloneNode();
-  debugPath.classList.add('line--debug');
-  if (path.parentNode) path.parentNode.insertBefore(debugPath.cloneNode(), path);
-});
-const debugCheckbox = document.getElementById('debug');
-debugCheckbox.addEventListener('change', () => {
-  if (debugCheckbox.checked) {
-    debugCheckbox.parentElement.classList.add('active');
-  } else {
-    debugCheckbox.parentElement.classList.remove('active');
-  }
-});
-let currentActive = 0;
-const checkboxes = document.querySelectorAll('.grid input');
-const autoShow = setInterval(() => {
-  checkboxes[currentActive % 4].checked = !checkboxes[currentActive % 4].checked;
-  if (!checkboxes[currentActive % 4].checked) currentActive += 1;
-}, 1000);
-document.querySelector('.grid').addEventListener('click', () => {
-  clearInterval(autoShow);
-})
         </script>
     </body>
 </html>
