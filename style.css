@@ -333,6 +333,10 @@ a {
     .translu {
         display: none;
     }
+  
+    .subHead p {
+        font-size: 30;
+    }
 }
 
 @keyframes fadeIn {
