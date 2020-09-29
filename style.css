@@ -21,7 +21,6 @@ img:focus, i:focus, a:focus, input, textarea, button {
 .subHead p {
     padding: 4%;
     font-size: 50;
-    text-decoration: underline;
     line-height: 1.1;
 }
 
