@@ -160,7 +160,6 @@ img:focus, i:focus, a:focus, input, textarea, button {
     width: 20%;
     margin: 3%;
     margin-top: -0.6%;
-    border-radius: 10%;
     float: left;
 }
 
