@@ -416,6 +416,9 @@ a {
     .alb_list {
         display: none;
     }  
+    .logo_bg {
+      margin-top: 22%;
+    }
 }
 
 @media screen and (max-width: 480px) {
