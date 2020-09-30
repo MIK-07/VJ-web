@@ -224,6 +224,8 @@
 
             /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
             function myFunction() {
+                this.classList.toggle('opened');
+                this.setAttribute('aria-expanded', this.classList.contains('opened'));
                 var x = document.getElementById("myLinks");
                 if (x.style.display === "block") {
                     x.style.display = "none";
@@ -231,6 +233,7 @@
                     x.style.display = "block";
                 }
             }
+            document.querySelector('.menu').addEventListener('click', myFunction);
 		
             if (window.innerHeight > window.innerWidth) {
                 document.querySelector(".bg").style.height = "100%";
