@@ -266,7 +266,6 @@ a {
 }
 
 .copyright {
-    background-color: #000;
     position: absolute;
     bottom: 0;
     width: 100%;           /* Footer height */
