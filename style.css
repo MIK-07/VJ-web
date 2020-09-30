@@ -400,6 +400,9 @@ a {
     .streamIcons {
         display: none;
     }
+    .logo_bg {
+      margin-top: 13%;
+    }
 }
 
 @media screen and (max-width: 640px) {
