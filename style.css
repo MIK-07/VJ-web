@@ -424,6 +424,9 @@ a {
         line-height: 1.5;
         top: -400%;
     }
+  .logo_bg {
+    margin-top: 43%;
+  }
 }
 
 @keyframes fadeIn {
