@@ -32,7 +32,6 @@ img:focus, i:focus, a:focus, input, textarea, button {
     padding: 1% 0.5%;
     font-family: monospace;
     font-size: 20;
-    border-bottom: 0.5px solid #333;
 }
 
 .songs {
