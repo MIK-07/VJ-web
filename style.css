@@ -328,6 +328,10 @@ a {
   stroke-width: 6;
 }
 
+.note:hover {
+   color: #ff0000;
+}
+
 @media screen and (max-width: 960px) {
     #social-in-menu {
         display: none;
