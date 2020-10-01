@@ -286,10 +286,11 @@ a {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  display: flex;
+  display: none;
   padding: 0;
   margin: 0;
   zoom: 0.4;
+  margin-left: auto;
 }
 .line {
   fill: none;
@@ -399,6 +400,13 @@ a {
     }
    .logo_bg {
       margin-top: 8.5%;
+    }
+    .menu {
+        display: flex;
+    }
+
+    .main_header_main_logo {
+        display: inline;
     }
 }
 
