@@ -149,16 +149,32 @@
         <!--Small screens-->
         <!-- Top Navigation Menu -->
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <div class="topnavmob">
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="releases.html">Releases</a>
-                <a href="music.html">Music</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
+	<div class="topnavmob">
+		<!--<div class = "linksBg"></div>-->
+		<!-- Navigation links (hidden by default) -->
+		<div id="myLinks">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="releases.html">Releases</a>
+			<a href="music.html">Music</a>
+			<a href="contact.html">Contact</a>
+
+			<hr class="linksEnd">
+
+			<div class="socialMob">
+				<a target="_blank" href="https://www.facebook.com/Vedant-Jadia-113755320349979/"><i
+						class="fa fa-facebook"></i></a>
+				<a target="_blank" href="https://www.youtube.com/channel/UCKE_uJp995aNPepMXsesaqA"><i
+						class="fa fa-youtube-play"></i></a>
+				<a target="_blank" href="https://www.instagram.com/vedantjadia/"><i class="fa fa-instagram"></i></a>
+				<a target="_blank" href="mailto:infovedantjadia@gmail.com"><i class="fa fa-envelope"></i></a>
+				<a target="_blank" href="https://twitter.com/VedantJadia"><i class="fa fa-twitter"></i></a>
+				<a target="_blank"
+					href="https://open.spotify.com/artist/5amlV0Hj4sDyU2M8dlu3Nn?si=nLTFrUFqS9u1--AMDYvb2Q"><i
+						class="fa fa-spotify"></i></a>
+			</div>
+		</div>
+	</div>
 
 			    <div class="contact">
 				<h2 class = "head">Contact</h2>
@@ -222,14 +238,24 @@
 		
             /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
             function myFunction() {
-                this.classList.toggle('opened');
-                this.setAttribute('aria-expanded', this.classList.contains('opened'));
-                var x = document.getElementById("myLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
+		this.classList.toggle('opened');
+		this.setAttribute('aria-expanded', this.classList.contains('opened'));
+		var x = document.getElementById("myLinks");
+		//var y = document.querySelector(".topnavmob .linksBg");
+		var z = document.querySelector(".topnavmob");
+		if (z.style.transform == "translateY(0%)") {
+			//x.style.display = "none";
+			//y.style.display = "none";    
+			//z.style.animation = "flyOut 2s forwards";     
+			z.style.transform = "translateY(-100%)";
+			document.querySelector(".contact").style.filter = "blur(0px)";
+		} else {
+			x.style.display = "block";
+			//y.style.display = "block";
+			z.style.transform = "translateY(0%)";
+			document.querySelector(".contact").style.filter = "blur(50px)";
+			//z.style.animation = "flyIn 2s forwards";
+		}
             }
             document.querySelector('.menu').addEventListener('click', myFunction);
         </script>
