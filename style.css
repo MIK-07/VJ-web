@@ -1,9 +1,8 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-    /*background-color: #333;*/
     background-color: #000;
     font-family: 'Poppins','lato', sans-serif !important;
     outline: none;
@@ -84,8 +83,7 @@ img:focus, i:focus, a:focus, input, textarea, button {
 }
 
 .active {
-    color:#d986ee !important;
-    box-shadow:inset 0px -2px 0px 0px #d986ee;
+    color: #74aaff !important;
 }
 
 .logo_without_bord {
@@ -139,12 +137,12 @@ img:focus, i:focus, a:focus, input, textarea, button {
 }
 
 .contact button {
-    background-color: #754de0;
+    background-color: #74aaff;
     padding: 1%;
     margin: 1% 0;
     border-radius: 50px;
     text-transform: uppercase;
-    box-shadow: 0px 0px 2px 1px #754de0;
+    box-shadow: 0px 0px 2px 1px #74aaff;
 }
 
 .contact p {
@@ -181,11 +179,11 @@ img:focus, i:focus, a:focus, input, textarea, button {
     z-index: -1;
     width: 100%;
     margin-top: 3%;
+    transition: 0.6s;
 }
 
 .logo_bg img {
     width: 100%;
-    animation: fadeIn 5s 0s;
 }
 
 .translu {
@@ -227,6 +225,7 @@ a {
     left: 0;
     width: 100%;
     z-index: -2;
+    transition: 0.6s;
 }
 
 #newd29 {
@@ -255,11 +254,29 @@ a {
 }
 
 .alb_list span a:hover {
-    color: #754de0;
+    color: #74aaff;
 }
 
 .topnavmob {
     display: none;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.6s;
+    transform: translateY(-100%);
+    z-index: 2;
+}
+
+.topnavmob .linksBg {
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: #444;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
 }
 
 #page_container {
@@ -282,25 +299,33 @@ a {
     padding: 1% 0;
 }
 
-.menu {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: none;
-  padding: 0;
-  margin: 0;
-  zoom: 0.4;
-  margin-left: auto;
+.main_header_main {
+    z-index: 6 !important;
 }
+
+.menu {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    padding: 0;
+    margin: 0;
+    zoom: 0.4;
+    margin-left: auto;
+    z-index: 6 !important;
+}
+
 .line {
-  fill: none;
-  stroke: #ffffff;
+    fill: none;
+    stroke: #ffffff;
     stroke-linecap: round;
     stroke-linejoin: round;
-  stroke-width: 6;
-  transition: stroke-dasharray 1s cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-width: 6;
+    transition: stroke-dasharray 1s cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .line1 {
   stroke-dasharray: 60 207;
   stroke-width: 6;
@@ -333,6 +358,10 @@ a {
    color: #ff0000;
 }
 
+.linksEnd {
+    margin: 5% 15%;
+}
+
 @media screen and (max-width: 960px) {
     #social-in-menu {
         display: none;
@@ -341,13 +370,12 @@ a {
     .topnavmob {
         display: block;
         overflow: hidden;
-        background-color: #000;
-        position: relative;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
     .topnavmob #myLinks {
         display: none;
+        height: 100%;
     }
 
     /* Style navigation menu links */
@@ -355,8 +383,9 @@ a {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 2em;
         display: block;
+        margin-top: 6%;
     }
 
     /* Style the hamburger menu */
@@ -370,6 +399,7 @@ a {
 
     .topnavmob i {
         margin: 0;
+        font-size: 20;
     }
 
     /* Style the active link (or home/logo) */
@@ -398,18 +428,19 @@ a {
         line-height: 1.5;
         top: -1000%;
     }
+
    .logo_bg {
       margin-top: 8.5%;
     }
+
     .menu {
         display: flex;
     }
 
-    .main_header_main_logo {
+    .socialMob a {
         display: inline;
     }
 }
-
 
 @media screen and (max-width: 800px) {
     .songs span p {
@@ -421,6 +452,7 @@ a {
     .streamIcons {
         display: none;
     }
+
     .logo_bg {
       margin-top: 13%;
     }
@@ -462,5 +494,23 @@ a {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes flyIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes flyOut {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
     }
 }
