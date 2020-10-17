@@ -180,10 +180,11 @@ img:focus, i:focus, a:focus, input, textarea, button {
     width: 100%;
     margin-top: 3%;
     transition: 0.6s;
+    text-align: center;
 }
 
 .logo_bg img {
-    width: 100%;
+    width: 50%;
 }
 
 .translu {
