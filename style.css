@@ -193,6 +193,10 @@ img:focus, i:focus, a:focus, input, textarea, button {
     animation: none;
 }
 
+.translu img {
+     width: 100%;   
+}
+
 .streamIcons {
     position: fixed;
     right: 0;
